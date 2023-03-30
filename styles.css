@@ -121,7 +121,7 @@ main {
 }
 
 #hero-image {
-  background: url("image-0.jpg");
+  background: url("images/image-0.jpg");
   width: 593px;
   height: 750px;
   display: block;
@@ -256,19 +256,19 @@ main {
   justify-content: space-between;
 }
 
-.GalleryImage1 {
+.galleryImage1 {
   width: 278.8px;
   height: 380px;
   border-radius: 10px;
 }
 
 
-.GalleryImage2 {
+.galleryImage2 {
   width: 280px;
   height: 250px;
   border-radius: 10px;
 }
-.GalleryImage3 {
+.galleryImage3 {
   width: 280px;
   height: 250px;
   border-radius: 10px;

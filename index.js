@@ -2,7 +2,7 @@ let slideIndex = 0;
 const carouselButtons = document.querySelectorAll('.carousel-btn');
 
 const setHeroImage = (imageIndex) => {
-    const imagePath = `image-${imageIndex}.jpg`;
+    const imagePath = `images/image-${imageIndex}.jpg`;
     const heroImage = document.getElementById('hero-image');
     heroImage.style.backgroundImage = `url(${imagePath})`;
     heroImage.style.transition = "0.5s";
@@ -12,10 +12,10 @@ const setHeroIndicator = (index) => {
     for(let i = 0; i < carouselButtons.length; i++ ) {
         if (i === index) {
             carouselButtons[i].querySelector('span').classList.replace('carousel-num','active');        
-            carouselButtons[i].querySelector('img').setAttribute('src', 'sliderIndicator.svg');
+            carouselButtons[i].querySelector('img').setAttribute('src', 'svg/sliderIndicator.svg');
         } else {
             carouselButtons[i].querySelector('span').classList.replace('active','carousel-num');
-            carouselButtons[i].querySelector('img').setAttribute('src', 'indicatorBubble.svg');
+            carouselButtons[i].querySelector('img').setAttribute('src', 'svg/indicatorBubble.svg');
         }
     }
 };
@@ -47,8 +47,8 @@ carouselButtons.forEach((button) => {
 let faqs = document.querySelectorAll('.faq');
 let arrow = document.querySelectorAll('.faq-arrow');
 let icons = document.querySelectorAll('.aIcon');
-let originalIcon = 'plus.svg';
-let newIcon = 'minus.svg';
+let originalIcon = 'svg/plus.svg';
+let newIcon = 'svg/minus.svg';
 
 faqs.forEach((faq, index) => {
     faq.addEventListener("click", () => {
